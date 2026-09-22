@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
-import { ChefHat, LogOut } from 'lucide-react';
+import { LogOut } from 'lucide-react';
 
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
@@ -18,11 +18,11 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 text-primary font-poppins font-bold text-xl">
-              <ChefHat size={28} />
-              RecipeHub
+            <Link to="/" className="font-poppins font-bold text-xl tracking-tight select-none">
+              <span className="text-darkText">Recipe</span>
+              <span className="text-primary">Hub</span>
             </Link>
-            
+
             {/* Desktop Links */}
             <div className="hidden md:ml-10 md:flex md:space-x-8">
               <Link to="/recipes" className="text-darkText hover:text-primary font-semibold">Browse</Link>
@@ -37,7 +37,7 @@ const Navbar = () => {
               )}
             </div>
           </div>
-          
+
           {/* User Actions */}
           <div className="flex items-center space-x-4">
             {user ? (
