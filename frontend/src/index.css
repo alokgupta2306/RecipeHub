@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #F97316;
+  --color-primaryHover: #EA580C;
+  --color-freshGreen: #16A34A;
+  --color-creamBg: #FFF8F0;
+  --color-cardWhite: #FFFFFF;
+  --color-darkText: #1F2937;
+  --color-mutedGray: #6B7280;
+  --color-borderGray: #E5E7EB;
+  --color-warningAmber: #F59E0B;
+  --font-poppins: 'Poppins', sans-serif;
+}
